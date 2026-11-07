@@ -71,6 +71,6 @@ The tests use controlled HTTP responses and local sample data. The companion mai
 
 The original adapter, teaching app and tests are available under the [MIT license](LICENSE). The purchased Funnel service has its own commercial source license.
 
-Read the [Next.js integration walkthrough](https://helpfulmods.com/blog/nextjs-stripe-checkout-paid-access/) or explore the [public MCP catalog](https://helpfulmods.com/llms.txt).
+Read the [installation guide](https://helpfulmods.com/blog/install-a-mod-with-your-coding-agent/) or explore the [public MCP catalog](https://helpfulmods.com/llms.txt).
 
 See [Funnel and Revenue](https://helpfulmods.com/mods/funnel/) for the durable customer, Checkout, reconciliation and access service used by the adapter.

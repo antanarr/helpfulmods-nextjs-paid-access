@@ -74,3 +74,7 @@ The original adapter, teaching app and tests are available under the [MIT licens
 Read the [installation guide](https://helpfulmods.com/blog/install-a-mod-with-your-coding-agent/) or explore the [public MCP catalog](https://helpfulmods.com/llms.txt).
 
 See [Funnel and Revenue](https://helpfulmods.com/mods/funnel/) for the durable customer, Checkout, reconciliation and access service used by the adapter.
+
+## Helpful Mods catalog MCP
+
+The [catalog-mcp](catalog-mcp/) directory contains the public Helpful Mods catalog MCP server and HTTP handler, with a runnable local snapshot and tests. It is a separate component from the Next.js paid-access example. Its README explains the hosted endpoint and the callbacks used for current product availability.

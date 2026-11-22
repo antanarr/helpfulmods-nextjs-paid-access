@@ -1,0 +1,45 @@
+{
+  "component": "Helpful Mods public catalog MCP",
+  "snapshotExportedAt": "2026-11-22T00:09:39.806480+00:00",
+  "sourceOrigin": "Helpful Mods maintained catalog-mcp component",
+  "sourceFiles": {
+    "src/catalog.generated.ts": {
+      "sha256": "3358fb5b1c52e5642762f0724efb8eb6a469010faadc427c82c0844ac8b7fbd2",
+      "bytes": 93579
+    },
+    "src/catalog.ts": {
+      "sha256": "be9be56dcad17df34c4e3f023a83d171573363d0bb8c18c342ce2f682c8f78bb",
+      "bytes": 5243
+    },
+    "src/foundation.ts": {
+      "sha256": "4e076680995a43cb4bfaed2cda0d726a101f422595dc2ecdde593943748a8fe7",
+      "bytes": 3994
+    },
+    "src/index.ts": {
+      "sha256": "b134cbb2621cb27ae14453b882992b2a38d10c9fbe4468d64fdc3bd0220b5a0e",
+      "bytes": 8942
+    },
+    "src/node.ts": {
+      "sha256": "7134354178b8467d0abef6a158707ba777e532bc621e2d329d301eca96b4d1ee",
+      "bytes": 656
+    },
+    "src/presentation.ts": {
+      "sha256": "2cffc4d4724ee571d5db263adb51e37f16e3967b4d1e85f161edbd8b98021f71",
+      "bytes": 2418
+    },
+    "src/search.ts": {
+      "sha256": "65fd6be2f2c80e734fa8e0c1abd961700ba89b21bdcc61a95323866e395504b0",
+      "bytes": 4357
+    },
+    "src/server.ts": {
+      "sha256": "25a938c3b5b25cb91e8b2d091f7b1c28885c7f0f72ca936431afc92760f88a5a",
+      "bytes": 12139
+    },
+    "src/stdio.ts": {
+      "sha256": "53473f7ca2aa004ff7acccb8aa8622603338232a81e347b5a30aae87f915a38c",
+      "bytes": 198
+    }
+  },
+  "sourceFilesModifiedForExport": false,
+  "hostServices": "The deployed application supplies availability and Foundation Kit data through the callbacks documented in README.md. This export includes the catalog component and its static snapshot."
+}

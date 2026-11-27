@@ -62,10 +62,15 @@ test("the saved checkout ID chooses the right Stripe Session", async () => {
   assert.deepEqual(await client.checkoutStatus(session, "customer_1", "new"), { ready: true, url: "https://checkout.stripe.com/c/pay/cs_test_new" });
 });
 test("unexpected redirect hosts and session bindings fail", async () => {
-  for (const url of ["https://evil.example/c/pay/cs_test_new", "https://checkout.stripe.com/c/pay/cs_test_other", "https://user@checkout.stripe.com/c/pay/cs_test_new"]) {
+  for (const url of ["https://evil.example/c/pay/cs_test_new", "https://checkout.stripe.com/c/pay/cs_test_other", "https://checkout.stripe.com/g/pay/cs_test_other", "https://user@checkout.stripe.com/c/pay/cs_test_new"]) {
     const { client } = harness([{ body: { checkouts: [{ id: "new", sessionId: "cs_test_new", url }] } }]);
     await assert.rejects(client.checkoutStatus(session, "customer_1", "new"), /unexpected checkout URL/);
   }
+});
+test("accepts the live Stripe hosted path and preserves its fragment", async () => {
+  const url = "https://checkout.stripe.com/g/pay/cs_live_new#provider-state";
+  const { client } = harness([{ body: { checkouts: [{ id: "new", sessionId: "cs_live_new", url }] } }]);
+  assert.deepEqual(await client.checkoutStatus(session, "customer_1", "new"), { ready: true, url });
 });
 test("access needs an active entitlement to this offer", async () => {
   const { client, claims } = harness([
